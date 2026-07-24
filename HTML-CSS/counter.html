@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+
+<body>
+    <h1 id="display">Count is 0</h1>
+    <p>You have clicked the button <span id="count">0</span> times.</p>
+    <button id="addBtn">Increment</button>
+    <button id="dcrBtn">Decrement</button>
+    <button id="resetBtn">Reset</button>
+</body>
+<script>
+    let count = 0
+    const display = document.getElementById('display')
+    const countDisplay = document.getElementById('count')
+    const button = document.getElementById('addBtn')
+    const dcrBtn = document.getElementById('dcrBtn')
+    const resetBtn = document.getElementById('resetBtn')
+
+    //event listener for increment button
+    button.addEventListener('click', function () {
+        count++
+        display.textContent = "Count is " + count
+        countDisplay.textContent = count
+        subtittle.textContent = "You have clicked the button " + count + " times."
+
+
+    })
+
+    //event listener for decrement button
+    dcrBtn.addEventListener('click', function () {
+        count--
+        display.textContent = "Count is " + count
+        countDisplay.textContent = count
+        subtittle.textContent = "You have clicked the button " + count + " times."
+
+    })
+
+    //event listener for reset button
+    resetBtn.addEventListener('click', function () {
+        count = 0
+        display.textContent = "Count is " + count
+        countDisplay.textContent = count
+        subtittle.textContent = "You have clicked the button " + count + " times."
+
+    })
+
+</script>
+
+</html>
