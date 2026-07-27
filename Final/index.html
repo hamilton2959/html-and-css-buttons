@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamilton Migwambo · Portfolio</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="container" id="appContainer">
+
+        <!-- NAV -->
+        <nav>
+            <div class="nav-links">
+                <a href="#summary">Summary</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon" id="themeIcon"></i> <span id="themeLabel">Dark</span>
+            </button>
+        </nav>
+
+        <!-- PROFILE -->
+        <div class="profile-row">
+            <div class="profile-text">
+                <h1>Hamilton Migwambo</h1>
+                <div class="badge">Junior Full-Stack · Java + Spring + Angular/React</div>
+                <div class="contact-links">
+                    <a href="mailto:migwambohamilton42@gmail.com"><i class="fas fa-envelope"></i> migwambohamilton42</a>
+                    <a href="#"><i class="fab fa-github"></i> hamilton2959</a>
+                    <a href="#"><i class="fas fa-map-pin"></i> Remote · Worldwide</a>
+                </div>
+            </div>
+            <div class="profile-avatar">
+                <!-- profile image: using a nice SVG avatar as placeholder (developer themed) -->
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231a5cff' /%3E%3Ccircle cx='50' cy='38' r='18' fill='%23f8fafc' /%3E%3Ccircle cx='34' cy='32' r='5' fill='%230d1a2b' /%3E%3Ccircle cx='66' cy='32' r='5' fill='%230d1a2b' /%3E%3Cpath d='M32 60 Q50 75 68 60' stroke='%23f8fafc' stroke-width='7' fill='none' stroke-linecap='round' /%3E%3C/svg%3E"
+                    alt="Hamilton Migwambo" />
+            </div>
+        </div>
+
+        <!-- SUMMARY -->
+        <div class="summary" id="summary">
+            <p><i class="fas fa-quote-left" style="color: var(--accent); margin-right: 8px;"></i>Full-Stack Developer
+                with 1+ years building scalable, secure applications using Java (Spring Boot) and Angular/React.
+                End-to-end feature ownership: architecture, DB, REST APIs, UI, deployment, monitoring. AWS, CI/CD,
+                MySQL, Redis, real-time systems. Clean code, mentoring, and high-scale SaaS.</p>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="section-title" id="skills"><i class="fas fa-code"></i> Core Skills</div>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-java"></i><span>Java 17/21</span></div>
+            <div class="skill-card"><i class="fas fa-leaf"></i><span>Spring Boot 3.x</span></div>
+            <div class="skill-card"><i class="fab fa-angular"></i><span>Angular 15+</span></div>
+            <div class="skill-card"><i class="fab fa-react"></i><span>React 18</span></div>
+            <div class="skill-card"><i class="fas fa-database"></i><span>MySQL / PostgreSQL</span></div>
+            <div class="skill-card"><i class="fas fa-cloud"></i><span>AWS (RDS, Lambda)</span></div>
+            <div class="skill-card"><i class="fas fa-cube"></i><span>Docker / Kafka</span></div>
+            <div class="skill-card"><i class="fas fa-shield-alt"></i><span>Spring Security</span></div>
+            <div class="skill-card"><i class="fas fa-code-branch"></i><span>CI/CD (Jenkins, GA)</span></div>
+            <div class="skill-card"><i class="fas fa-tachometer-alt"></i><span>Redis · Hibernate</span></div>
+            <div class="skill-card"><i class="fas fa-check-circle"></i><span>JUnit · Mockito</span></div>
+            <div class="skill-card"><i class="fas fa-infinity"></i><span>Microservices</span></div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="section-title" id="experience"><i class="fas fa-briefcase"></i> Experience</div>
+        <div class="exp-item">
+            <h3>Junior Full-Stack Developer <span class="meta">Freelance / Contract · 2025-2026</span></h3>
+            <ul>
+                <li>Full-stack SaaS using Spring Boot 3.x + Angular/React, REST APIs, 40% response improvement via
+                    caching/query optimization.</li>
+                <li>Real-time systems with Spring WebSockets &amp; STOMP (notifications, chats, dashboards).</li>
+                <li>DB schema design, indexing, partitioning, Redis caching, Spring Batch, @Async, AWS Lambda.</li>
+                <li>Infrastructure as Code (AWS CDK), CI/CD with Jenkins, Maven/Gradle, GitHub Actions, CodePipeline.
+                </li>
+                <li>Mentored juniors, OpenAPI/Swagger documentation, ADRs.</li>
+            </ul>
+            <div class="achievement"><i class="fas fa-trophy" style="margin-right: 6px;"></i> Lambda cost -24% ·
+                response 1.2s → 350ms · monolith → microservices</div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="section-title" id="projects"><i class="fas fa-folder-open"></i> Project Highlights</div>
+        <div class="project-item">
+            <h3>Document Workflow System (SaaS) <span class="meta">Spring Boot + Angular + AWS</span></h3>
+            <ul>
+                <li>Multi-role approval workflow, file storage with S3, real-time notifications via WebSockets/STOMP.
+                </li>
+                <li>PostgreSQL/MySQL schema with Spring Data JPA for thousands of concurrent transactions.</li>
+            </ul>
+        </div>
+        <div class="project-item">
+            <h3>Academic Management Platform <span class="meta">Spring Boot 3.x + React</span></h3>
+            <ul>
+                <li>Tutor-student role system, course assignments, material uploads with Spring Security RBAC.</li>
+                <li>Dynamic dashboards with React + TailwindCSS, RESTful Spring Boot APIs.</li>
+            </ul>
+        </div>
+        <div class="project-item">
+            <h3>E-commerce Microservices <span class="meta">Spring Boot · Kafka · AWS</span></h3>
+            <ul>
+                <li>Modular microservices for auth (JWT), checkout, inventory. Apache Kafka for messaging.</li>
+                <li>AWS Lambda for serverless tasks, CloudWatch monitoring.</li>
+            </ul>
+        </div>
+
+        <!-- CERTIFICATIONS -->
+        <div class="section-title" id="certifications"><i class="fas fa-certificate"></i> Certifications &amp; Strengths
+        </div>
+        <div class="cert-grid">
+            <span><i class="fas fa-check-circle" style="color: var(--accent);"></i> Java Spring Boot Advanced</span>
+            <span><i class="fas fa-check-circle" style="color: var(--accent);"></i> Angular &amp; TypeScript
+                Advanced</span>
+            <span><i class="fas fa-check-circle" style="color: var(--accent);"></i> Docker &amp; Containerization</span>
+            <span><i class="fas fa-check-circle" style="color: var(--accent);"></i> AWS Cloud Practitioner</span>
+        </div>
+        <div
+            style="background: var(--code-bg); border-radius: 2rem; padding: 1rem 1.8rem; margin-top: 0.5rem; border: 1px solid var(--border);">
+            <p style="display: flex; flex-wrap: wrap; gap: 0.8rem 1.8rem; color: var(--text-secondary);">
+                <span><i class="fas fa-lock" style="color: var(--accent);"></i> Spring Security · OAuth2 · JWT</span>
+                <span><i class="fas fa-chart-line" style="color: var(--accent);"></i> JVM tuning · caching
+                    strategies</span>
+                <span><i class="fas fa-cloud-upload-alt" style="color: var(--accent);"></i> Cloud-native ·
+                    auto-scaling</span>
+                <span><i class="fas fa-users" style="color: var(--accent);"></i> Mentoring · SOLID principles</span>
+            </p>
+        </div>
+        <!-- ========== CERTIFICATIONS ========== -->
+        <div class="section-card" id="certifications">
+            <div class="section-title"><i class="fas fa-certificate"></i> Certifications</div>
+            <div class="cert-grid">
+                <span><i class="fas fa-check-circle" style="color:#1a5f9e;"></i> Java Spring Boot – Advanced
+                    Development</span>
+                <span><i class="fas fa-check-circle" style="color:#1a5f9e;"></i> Angular & TypeScript Advanced
+                    Training</span>
+                <span><i class="fas fa-check-circle" style="color:#1a5f9e;"></i> Docker & Containerization
+                    Fundamentals</span>
+                <span><i class="fas fa-check-circle" style="color:#1a5f9e;"></i> AWS Cloud Practitioner
+                    Essentials</span>
+            </div>
+        </div>
+
+        <!-- ========== TECHNICAL STRENGTHS ========== -->
+        <div class="section-card" id="strengths">
+            <div class="section-title"><i class="fas fa-shield-alt"></i> Technical Strengths</div>
+            <div class="strength-list">
+                <span><i class="fas fa-lock"></i> Spring Security, OAuth2, JWT</span>
+                <span><i class="fas fa-tachometer-alt"></i> JVM tuning & caching strategies</span>
+                <span><i class="fas fa-cloud-upload-alt"></i> Cloud-native & auto-scaling on AWS</span>
+                <span><i class="fas fa-code"></i> Clean, testable code · SOLID</span>
+                <span><i class="fas fa-users"></i> Communication & mentoring</span>
+            </div>
+        </div>
+
+        <!-- ========== TOOLS & TECHNOLOGIES ========== -->
+        <div class="section-card" id="tools">
+            <div class="section-title"><i class="fas fa-toolbox"></i> Tools & Technologies</div>
+            <div class="tools-inline">
+                <span>Java 17/21</span> <span>Spring Boot</span> <span>Spring Security</span> <span>Hibernate/JPA</span>
+                <span>Maven</span> <span>Gradle</span> <span>Angular</span> <span>React</span> <span>TypeScript</span>
+                <span>Redis</span> <span>MySQL</span> <span>PostgreSQL</span> <span>DynamoDB</span> <span>Kafka</span>
+                <span>Docker</span> <span>AWS (RDS, Lambda, S3, CloudWatch, ElastiCache)</span>
+                <span>CloudFormation</span>
+                <span>AWS CDK</span> <span>Git & GitHub</span> <span>Jenkins</span> <span>Jira</span> <span>Nginx</span>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <span><i class="fas fa-graduation-cap"></i> BSc Computer Science · Chuka University (2023 –
+                present)</span>
+            <span><i class="fas fa-globe"></i> Available worldwide · remote</span>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const toggleBtn = document.getElementById('themeToggle');
+            const icon = document.getElementById('themeIcon');
+            const label = document.getElementById('themeLabel');
+            const body = document.body;
+
+            // check stored preference
+            const storedTheme = localStorage.getItem('theme');
+            if (storedTheme === 'dark') {
+                body.classList.add('dark');
+                icon.className = 'fas fa-sun';
+                label.textContent = 'Light';
+            } else {
+                body.classList.remove('dark');
+                icon.className = 'fas fa-moon';
+                label.textContent = 'Dark';
+            }
+
+            toggleBtn.addEventListener('click', function () {
+                body.classList.toggle('dark');
+                const isDark = body.classList.contains('dark');
+                if (isDark) {
+                    icon.className = 'fas fa-sun';
+                    label.textContent = 'Light';
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    icon.className = 'fas fa-moon';
+                    label.textContent = 'Dark';
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+
+            // smooth nav scrolling (optional)
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId && targetId.startsWith('#')) {
+                        e.preventDefault();
+                        const targetEl = document.querySelector(targetId);
+                        if (targetEl) {
+                            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        })();
+    </script>
+
+    <!-- subtle: additional tech icons in the skill cards already present -->
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+ .subscribe-button {
+     background-color: #fc0202;
+     border: none;
+     border-radius: 4px;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     display: inline-block;
+     font-size: 16px;
+     margin-right: 8px;
+     cursor: pointer;
+ }
+
+ .subscribe-button:hover {
+     opacity: 0.8;
+ }
+
+ .subscribe-button:active {
+     opacity: 0.5;
+ }
+
+ .join-button {
+     background-color: rgb(255, 255, 255);
+     border: none;
+     border-radius: 4px;
+     border-width: 2px;
+     color: rgb(1, 10, 248);
+     padding: 15px 32px;
+     text-align: center;
+     display: inline-block;
+     font-size: 16px;
+     margin-right: 8px;
+     cursor: pointer;
+     transition: background-color 1s;
+ }
+
+ .join-button:hover {
+     background-color: rgb(39, 161, 237);
+ }
+
+ .sign-up-button {
+     background-color: #02bbf9;
+     border: none;
+     border-radius: 8px;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     display: inline-block;
+     font-size: 16px;
+     margin-right: 8px;
+     cursor: pointer;
+     box-shadow: 10px 10px 10px#818384;
+ }
+
+ .sign-up-button:hover {
+     background-color: #007B9A;
+ }

@@ -1,0 +1,34 @@
+ .cv-tittle {
+     font-family: Arial;
+     font-size: 18px;
+     font-weight: bold;
+     width: 500px;
+     line-height: 24px;
+ }
+
+ .cv-skills {
+     font-family: Arial;
+     font-size: 18px;
+     color: rgb(96, 96, 96);
+     margin-bottom: 100px;
+ }
+
+ .cv-footer {
+     font-family: Arial;
+     font-size: 18px;
+     color: rgb(255, 255, 255);
+     line-height: 22px;
+     margin-bottom: 50px;
+     background-color: rgb(249, 4, 4);
+     text-align: center;
+     padding-top: 10px;
+     padding-bottom: 18px;
+ }
+
+ .cv-career {
+     cursor: pointer;
+ }
+
+ .cv-career:hover {
+     text-decoration: underline;
+ }

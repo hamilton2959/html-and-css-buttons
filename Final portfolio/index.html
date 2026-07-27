@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamilton Migwambo · full-stack developer</title>
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- ============ MAIN CONTAINER ============ -->
+    <div class="container" id="appContainer">
+        <!-- ============ NAVIGATION ============ -->
+        <nav>
+            <div class="nav-brand">
+                <i class="fas fa-code"></i> Hamilton.dev
+            </div>
+            <div class="nav-links">
+                <a href="#summary">Summary</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#tools">Tools</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon" id="themeIcon"></i> <span id="themeLabel">Dark</span>
+            </button>
+        </nav>
+
+        <!-- PROFILE HEADER with image top right -->
+        <div class="profile-header" id="summary">
+            <div class="profile-text">
+                <h1>Hamilton Migwambo</h1>
+                <div class="tagline">
+                    <i class="fas fa-bolt" style="margin-right: 6px;"></i> Junior Full-Stack · Java + Spring +
+                    Angular/React
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:migwambohamilton42@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://github.com/hamilton2959"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/hamilton-migwambo"><i class="fab fa-linkedin-in"></i>
+                        LinkedIn</a>
+                    <a href="https://www.instagram.com/its_hamilton10"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://www.x.com/Joe_xm8"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+
+                <!-- summary -->
+                <div class="summary">
+                    <p><i class="fas fa-quote-left" style="color:#4b74db; margin-right:0.6rem;"></i>Full‑Stack Developer
+                        with 1+
+                        years of experience building scalable, secure, and high‑performance applications using Java
+                        (Spring
+                        Boot) and Angular/React. Proven ability to own features end‑to‑end — from architecture to
+                        deployment.
+                        AWS, CI/CD, MySQL, Redis, real‑time systems.</p>
+                </div>
+                <div>
+                    <a style="display: inline-block; padding: 12px 24px; background: #007bff; color: white;
+                    border-radius: 8px; text-decoration: none;" href="Hamilton Migwambo CV.pdf" target="_blank">
+                        Download My resume
+                    </a>
+                </div>
+            </div>
+            <div class="profile-avatar">
+                <!-- profile image: placeholder with developer avatar (font-awesome) 
+                 but we use a nice SVG avatar as fallback, or you can replace src -->
+                <img src="Hamilton.jpeg"
+                    style="width:200px; height:200px; border-radius:50%; object-fit:cover; border:3px solid white; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+
+        <!-- ========== SKILLS (with icons/images) ========== -->
+        <div class="section-card" id="skills">
+            <div class="section-title"><i class="fas fa-cogs"></i> Core Skills</div>
+            <div class="skills-grid">
+                <!-- Backend icons -->
+                <span class="skill-item"><i class="fab fa-java"></i> Java 17/21</span>
+                <span class="skill-item"><i class="fas fa-leaf"></i> Spring Boot 3.x</span>
+                <span class="skill-item"><i class="fas fa-cloud"></i> Spring Security</span>
+                <span class="skill-item"><i class="fas fa-database"></i> MySQL / PostgreSQL</span>
+                <span class="skill-item"><i class="fas fa-bolt"></i> Redis</span>
+                <span class="skill-item"><i class="fas fa-code-branch"></i> Microservices</span>
+                <!-- Frontend -->
+                <span class="skill-item"><i class="fab fa-angular"></i> Angular 15+</span>
+                <span class="skill-item"><i class="fab fa-react"></i> React 18</span>
+                <span class="skill-item"><i class="fab fa-js"></i> TypeScript</span>
+                <span class="skill-item"><i class="fab fa-css3-alt"></i> TailwindCSS</span>
+                <!-- DevOps & cloud -->
+                <span class="skill-item"><i class="fab fa-aws"></i> AWS (RDS, Lambda, S3)</span>
+                <span class="skill-item"><i class="fas fa-cubes"></i> AWS CDK</span>
+                <span class="skill-item"><i class="fas fa-cogs"></i> Docker / Kafka</span>
+                <span class="skill-item"><i class="fas fa-code"></i> JUnit / Mockito</span>
+            </div>
+        </div>
+
+        <!-- ========== EXPERIENCE ========== -->
+        <div class="section-card" id="experience">
+            <div class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</div>
+            <div class="exp-item">
+                <h3>Junior Full-Stack Developer <span class="meta">Freelance / Contract · 2025 – 2026</span></h3>
+                <ul>
+                    <li>Led full-stack development for SaaS and enterprise applications using Java Spring Boot 3.x and
+                        Angular/React.</li>
+                    <li>Designed RESTful APIs, improving response time up to 40% through caching & query optimization.
+                    </li>
+                    <li>Built real-time systems with Spring WebSockets & STOMP for notifications and dashboards.</li>
+                    <li>Designed DB schemas and optimized SQL with indexing, partitioning, Redis caching.</li>
+                    <li>Developed background processes with Spring Batch, @Async, and AWS Lambda.</li>
+                    <li>Infrastructure as Code using AWS CDK; CI/CD with Jenkins, GitHub Actions, AWS CodePipeline.</li>
+                    <li>Mentored junior devs, documented APIs with OpenAPI/Swagger, and wrote ADRs.</li>
+                </ul>
+                <div style="margin-top: 0.6rem;">
+                    <span class="achievement-badge"><i class="fas fa-check-circle"></i> Lambda cost -24% (JVM
+                        cold-start)</span>
+                    <span class="achievement-badge"><i class="fas fa-rocket"></i> Response 1.2s → 350ms</span>
+                    <span class="achievement-badge"><i class="fas fa-arrow-right"></i> Monolith → microservices
+                        migration</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== PROJECTS ========== -->
+        <div class="section-card" id="projects">
+            <div class="section-title"><i class="fas fa-folder-open"></i> Project Highlights</div>
+
+            <div class="project-item">
+                <h3>📄 Document Workflow System (SaaS) <span class="meta">Spring Boot + Angular + AWS</span></h3>
+                <ul>
+                    <li>Multi-role document approval workflow with file storage (AWS S3) and real-time notifications via
+                        WebSockets/STOMP.</li>
+                    <li>PostgreSQL/MySQL schema supporting thousands of concurrent transactions with Spring Data JPA.
+                    </li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>🎓 Academic Management Platform <span class="meta">Spring Boot 3.x + React</span></h3>
+                <ul>
+                    <li>Role-based system (tutor/student) for course assignments and material uploads with Spring
+                        Security RBAC.</li>
+                    <li>Dynamic dashboards with React + TailwindCSS, RESTful Spring Boot APIs.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>🛒 E-commerce Microservices <span class="meta">Spring Boot + Kafka + AWS</span></h3>
+                <ul>
+                    <li>Modular microservices for authentication (JWT), checkout, inventory with Apache Kafka for
+                        inter-service messaging.</li>
+                    <li>AWS Lambda for serverless tasks and CloudWatch monitoring.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ========== CERTIFICATIONS ========== -->
+        <div class="section-card" id="certifications">
+            <div class="section-title"><i class="fas fa-certificate"></i> Certifications</div>
+            <div class="cert-list">
+                <span><i class="fas fa-check-circle" style="color:#1a5f9e;"></i> Java Spring Boot – Advanced
+                    Development</span>
+                <span><i class="fas fa-check-circle" style="color:#1a5f9e;"></i> Angular & TypeScript Advanced
+                    Training</span>
+                <span><i class="fas fa-check-circle" style="color:#1a5f9e;"></i> Docker & Containerization
+                    Fundamentals</span>
+                <span><i class="fas fa-check-circle" style="color:#1a5f9e;"></i> AWS Cloud Practitioner
+                    Essentials</span>
+            </div>
+        </div>
+
+        <!-- ========== TECHNICAL STRENGTHS ========== -->
+        <div class="section-card" id="strengths">
+            <div class="section-title"><i class="fas fa-shield-alt"></i> Technical Strengths</div>
+            <div class="strength-list">
+                <span><i class="fas fa-lock"></i> Spring Security, OAuth2, JWT</span>
+                <span><i class="fas fa-tachometer-alt"></i> JVM tuning & caching strategies</span>
+                <span><i class="fas fa-cloud-upload-alt"></i> Cloud-native & auto-scaling on AWS</span>
+                <span><i class="fas fa-code"></i> Clean, testable code · SOLID</span>
+                <span><i class="fas fa-users"></i> Communication & mentoring</span>
+            </div>
+        </div>
+
+        <!-- ========== TOOLS & TECHNOLOGIES ========== -->
+        <div class="section-card" id="tools">
+            <div class="section-title"><i class="fas fa-toolbox"></i> Tools & Technologies</div>
+            <div class="tools-inline">
+                <span>Java 17/21</span> <span>Spring Boot</span> <span>Spring Security</span> <span>Hibernate/JPA</span>
+                <span>Maven</span> <span>Gradle</span> <span>Angular</span> <span>React</span> <span>TypeScript</span>
+                <span>Redis</span> <span>MySQL</span> <span>PostgreSQL</span> <span>DynamoDB</span> <span>Kafka</span>
+                <span>Docker</span> <span>AWS (RDS, Lambda, S3, CloudWatch, ElastiCache)</span>
+                <span>CloudFormation</span>
+                <span>AWS CDK</span> <span>Git & GitHub</span> <span>Jenkins</span> <span>Jira</span> <span>Nginx</span>
+            </div>
+            <hr>
+            <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 0.9rem; color: #24537a; margin-top: 0.2rem;">
+                <span><i class="fas fa-graduation-cap"></i> BSc Computer Science · Chuka University (2023 –
+                    present)</span>
+                <span><i class="fas fa-map-pin"></i> Available worldwide · remote</span>
+            </div>
+        </div>
+
+        <!-- small footer note -->
+        <div style="text-align: center; font-size: 0.8rem; color: #6a7f9a; margin-top: 0.5rem;">
+            <i class="fas fa-code"></i> Hamilton Migwambo · full-stack portfolio
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
